@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: react-two
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: coe-tech/react-two
+    backstage.io/kubernetes-namespace: backstage-ms
+    github.com/project-slug: coe-tech/react-two
+    sonarqube.org/project-key: react-two
+  tags:
+      - frontend
+      - react
+  links:
+    - url: https://frontreact.rfp.sysmap.dev
+      title: WebApp
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: group:default/coe
+  system: system:default/rfp-system
+  consumesApis: []
